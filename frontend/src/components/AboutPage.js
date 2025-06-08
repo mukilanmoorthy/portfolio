@@ -72,7 +72,7 @@ const AboutPage = () => {
             <img src={astronaut} alt="spaceman" />
         </Spaceman>    
         <Main>
-      Hi, I'm a full-stack developer from Tamil Nadu, India. I enjoy building clean and user-friendly websites.
+      Hi, I'm a web developer from Tamil Nadu, India. I enjoy building clean and user-friendly websites.
 <br /> <br/>
 I work on both frontend and backend, and I love learning new tools and technologies. I'm also a freelancer who enjoys solving problems with code.
 <br/> <br/>
