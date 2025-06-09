@@ -19,11 +19,15 @@ const Icons = styled.div`
   & > *:not(:last-child) {
     margin: 0.5rem 0;
   }
+@media (max-width: 768px) {
+    left : 1rem;
+}
+
 `;
 
 const Line = styled(motion.span)`
   width: 2px;
-  height: 8rem;
+  height: 88rem;
   background-color: ${(props) =>
     props.color === "dark" ? DarkTheme.text : DarkTheme.body};
 `;

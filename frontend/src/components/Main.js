@@ -46,8 +46,8 @@ text-decoration: none;
 z-index:1;
 
 @media (max-width: 768px) {
-    top: 1rem;
-    right: 1rem;
+    top: 2.5rem;
+    right: 2rem;
     font-size: 0.9rem;
 }
 `
@@ -69,13 +69,13 @@ const WORK = styled(NavLink)`
 color: ${props => props.click ? props.theme.body : props.theme.text};
 position: absolute;
 top: 50%;
-left: calc(1rem + 2vw);
+left: calc(2rem + 2vw);
 transform: translate(-50%, -50%) rotate(-90deg) ;
 text-decoration: none;
 z-index:1;
 
 @media (max-width: 768px) {
-    left: 0.5rem;
+    left: 1.6rem;
     font-size: 0.9rem;
 }
 `
@@ -140,15 +140,15 @@ align-items: center;
 transition: all 1s ease;
 
 &>:first-child{
-        animation: ${rotate} infinite 1.5s linear;
-        width: ${props => props.click ? '80px' : '120px'};
-        height: ${props => props.click ? '80px' : '120px'};
+    animation: ${rotate} infinite 1.5s linear;
+    width: ${props => props.click ? '130px' : '180px'};
+    height: ${props => props.click ? '130px' : '180px'};
 }
 
 &>:last-child{
-        display: ${props => props.click ? 'none' :'inline-block'  };
-        padding-top: 1rem;
-        font-size: 1rem;
+    display: ${props => props.click ? 'none' :'inline-block'  };
+    padding-top: 2rem;
+    font-size: 1.7rem;
 }
 
 @media (max-width: 768px) {
@@ -156,12 +156,12 @@ transition: all 1s ease;
     left: ${props => props.click ? '90%' :'50%'  };
 
     &>:first-child{
-        width: ${props => props.click ? '50px' : '80px'};
-        height: ${props => props.click ? '50px' : '80px'};
+    width: ${props => props.click ? '90px' : '130px'};
+    height: ${props => props.click ? '90px' : '130px'};
     }
     &>:last-child{
-        font-size: 0.8rem;
-        padding-top: 0.5rem;
+    font-size: 1.2rem;
+    padding-top: 1.2rem;
     }
 }
 `
@@ -181,6 +181,7 @@ transition: height 0.5s ease, width 1s ease 0.5s;
     width: ${props => props.click ? '60%' : '0%'};
 }
 `
+
 
 
 const Main = () => {
@@ -284,7 +285,7 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    About.
+                    About
                 </motion.h2>
             </ABOUT>
             <SKILLS to="/skills">
@@ -300,7 +301,7 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    My Skills.
+                    My Skills
                 </motion.h2>
             </SKILLS>
 
